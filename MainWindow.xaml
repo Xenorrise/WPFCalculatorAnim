@@ -1,0 +1,87 @@
+﻿<Window x:Class="WPFCalculatorAnim.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFCalculatorAnim"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="505" Width="450" MinHeight="505" MinWidth="450" Background="LightGray">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.(ScaleTransform.ScaleX)"
+                                             To="1.1" Duration="0:0:0.1"/>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.(ScaleTransform.ScaleY)"
+                                             To="1.1" Duration="0:0:0.1"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+                    <Trigger.ExitActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.(ScaleTransform.ScaleX)"
+                                             To="1" Duration="0:0:0.1"/>
+                                <DoubleAnimation Storyboard.TargetProperty="RenderTransform.(ScaleTransform.ScaleY)"
+                                             To="1" Duration="0:0:0.1"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.ExitActions>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="LightBlue"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Rectangle Margin="10,10,10,0" Fill="White" Stroke="Black" Height="106" VerticalAlignment="Top"></Rectangle>
+        <Viewbox Margin="0,31,18,0" Stretch="Uniform" Height="85" VerticalAlignment="Top" HorizontalAlignment="Right" Width="404">
+            <TextBlock Name="NumBlock" Text="0" FontWeight="Bold" TextAlignment="Right" HorizontalAlignment="Right" Height="17"/>
+        </Viewbox>
+        <Viewbox Margin="0,10,12,0" Stretch="Uniform" HorizontalAlignment="Right" Width="423" Height="43" VerticalAlignment="Top">
+            <TextBlock Name="ProblemBlock" Text="" FontWeight="Bold" Foreground="Gray" TextAlignment="Right" HorizontalAlignment="Center" Height="23" Width="229"/>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Left">
+            <Grid Height="457">
+                <UniformGrid Margin="10,121,172,5" Rows="4" Columns="3">
+                    <Button Content="7" FontFamily="Cascadia Mono" FontSize="40" Margin="4" Click="AddDigit"></Button>
+                    <Button Content="8" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="AddDigit"></Button>
+                    <Button Content="9" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="AddDigit"></Button>
+
+                    <Button Content="4" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="AddDigit"></Button>
+                    <Button Content="5" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="AddDigit"></Button>
+                    <Button Content="6" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="AddDigit"></Button>
+
+                    <Button Content="1" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="AddDigit"></Button>
+                    <Button Content="2" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="AddDigit"></Button>
+                    <Button Content="3" FontFamily="Cascadia Mono" FontSize="40" Margin="4" Click="AddDigit"></Button>
+
+                    <Button Content="+/-" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="ChangeNumberSign"></Button>
+                    <Button Content="0" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="AddDigit"></Button>
+                    <Button Content="," FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="AddDigit"></Button>
+                </UniformGrid>
+                <UniformGrid Margin="257,121,87,5" Rows="4" Columns="1">
+                    <Button Content="C" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="ClearAll"></Button>
+                    <Button Content="/" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="AddOperation"></Button>
+                    <Button Content="*" FontFamily="Cascadia Mono" FontSize="40" Margin="4" Click="AddOperation"></Button>
+                    <Button Content="-" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="AddOperation"></Button>
+                </UniformGrid>
+                <UniformGrid Margin="342,121,10,5" Rows="3" Columns="1">
+                    <Button Content="D" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="RemoveDigit"></Button>
+                    <Button Content="+" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="AddOperation"></Button>
+                    <Button Content="=" FontFamily="Cascadia Mono" FontSize="40"  Margin="4" Click="ResultCalculating"></Button>
+                </UniformGrid>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</Window>

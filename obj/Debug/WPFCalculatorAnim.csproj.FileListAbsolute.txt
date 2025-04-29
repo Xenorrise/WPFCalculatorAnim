@@ -1,0 +1,17 @@
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\bin\Debug\WPFCalculatorAnim.exe.config
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\bin\Debug\WPFCalculatorAnim.exe
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\bin\Debug\WPFCalculatorAnim.pdb
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\WPFCalculatorAnim.csproj.AssemblyReference.cache
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\MainWindow.g.cs
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\App.g.cs
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\WPFCalculatorAnim_MarkupCompile.cache
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\WPFCalculatorAnim_MarkupCompile.lref
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\MainWindow.baml
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\WPFCalculatorAnim.g.resources
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\WPFCalculatorAnim.Properties.Resources.resources
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\WPFCalculatorAnim.csproj.GenerateResource.cache
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\WPFCalculatorAnim.csproj.CoreCompileInputs.cache
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\WPFCalculatorAnim.exe
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\WPFCalculatorAnim.pdb
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\obj\Debug\WPFCalculatorAnim_Content.g.cs
+D:\IT\Projects\MS_VisualStudio_Projects\WPFCalculatorAnim\WPFCalculatorAnim\bin\Debug\Sounds\click.wav
